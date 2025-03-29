@@ -1,0 +1,31 @@
+/* Custom styles that override or extend Tailwind */
+.hero-video video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Smooth transitions for interactive elements */
+button, a {
+    transition: all 0.3s ease;
+}
+
+/* Gym card image hover effect */
+.grid > div img {
+    transition: transform 0.5s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-video {
+        height: 70vh;
+    }
+    
+    .hero-video h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-video p {
+        font-size: 1rem;
+    }
+}
